@@ -31,16 +31,16 @@ const Navbar = () => {
                         <Box  className="logo" />
 
                         <span className="name">
-                            Roomify
+                            VaastuX
                         </span>
                     </div>
 
-                    <ul className="links">
-                        <a href="#">Product</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Community</a>
-                        <a href="#">Enterprise</a>
-                    </ul>
+                    {/*<ul className="links">*/}
+                    {/*    <a href="#">Product</a>*/}
+                    {/*    <a href="#">Pricing</a>*/}
+                    {/*    <a href="#">Community</a>*/}
+                    {/*    <a href="#">Enterprise</a>*/}
+                    {/*</ul>*/}
                 </div>
 
                 <div className="actions">

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #fdfbf7;
-  --color-foreground: #1a1a1a;
+  --color-background: #FFF8F0;
+  --color-foreground: #4B2E2B;
   --color-surface: #ffffff;
   --color-surface-highlight: #f3f4f6;
-  --color-primary: #f97316;
+  --color-primary: #C08552;
   --color-secondary: #3b82f6;
   --color-accent: #8b5cf6;
   --font-serif: "Instrument Serif", serif;
@@ -19,8 +19,8 @@
   }
 
   body {
-    background-color: #fdfbf7;
-    color: #1a1a1a;
+    background-color: #FFF8F0;
+    color: #4B2E2B;
     font-family: Inter, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
@@ -59,15 +59,15 @@
     @apply inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed;
 
     &.btn--primary {
-      @apply bg-primary text-white hover:bg-[#EA580C] shadow-sm;
+      @apply bg-primary text-white hover:bg-[#8C5A3C] shadow-sm;
     }
 
     &.btn--secondary {
-      @apply bg-white text-black border border-zinc-200 hover:bg-zinc-50 shadow-sm;
+      @apply bg-white text-[#4B2E2B] border border-zinc-200 hover:bg-zinc-50 shadow-sm;
     }
 
     &.btn--ghost {
-      @apply text-zinc-600 hover:text-black hover:bg-black/5;
+      @apply text-zinc-600 hover:text-[#4B2E2B] hover:bg-black/5;
     }
 
     &.btn--outline {
@@ -116,11 +116,11 @@
           @apply flex items-center space-x-2 cursor-pointer;
 
           .logo {
-            @apply w-6 h-6 text-black;
+            @apply w-6 h-6 text-[#4B2E2B];
           }
 
           .name {
-            @apply text-xl font-serif font-bold text-black tracking-tight;
+            @apply text-xl font-serif font-bold text-[#4B2E2B] tracking-tight;
           }
         }
 
@@ -128,7 +128,7 @@
           @apply hidden md:flex items-center space-x-6;
 
           a {
-            @apply text-sm font-medium text-zinc-600 hover:text-black transition-colors;
+            @apply text-sm font-medium text-zinc-600 hover:text-[#4B2E2B] transition-colors;
           }
         }
       }
@@ -149,7 +149,7 @@
         }
 
         .cta {
-          @apply inline-flex items-center justify-center rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed px-3 py-1.5 text-xs uppercase tracking-wide bg-primary text-white hover:bg-[#EA580C] shadow-sm;
+          @apply inline-flex items-center justify-center rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed px-3 py-1.5 text-xs uppercase tracking-wide bg-primary text-white hover:bg-[#8C5A3C] shadow-sm;
         }
       }
     }
@@ -170,7 +170,7 @@
       }
 
       h3 {
-        @apply text-xl font-serif font-bold text-black mb-2;
+        @apply text-xl font-serif font-bold text-[#4B2E2B] mb-2;
       }
 
       p {
@@ -181,11 +181,11 @@
         @apply flex flex-col space-y-3;
 
         .confirm {
-          @apply bg-primary hover:bg-orange-600 text-white;
+          @apply bg-primary hover:bg-[#C08552] text-white;
         }
 
         .cancel {
-          @apply text-xs text-zinc-400 hover:text-black mt-2;
+          @apply text-xs text-zinc-400 hover:text-[#4B2E2B] mt-2;
         }
       }
     }
@@ -226,7 +226,7 @@
       }
 
       &:not(.is-dragging):hover .drop-icon {
-        @apply bg-zinc-300 text-black;
+        @apply bg-zinc-300 text-[#4B2E2B];
       }
     }
 
@@ -237,7 +237,7 @@
         @apply relative z-10 flex flex-col items-center justify-center text-center;
 
         .status-icon {
-          @apply w-12 h-12 rounded-lg bg-zinc-100 flex items-center justify-center text-black mb-3 border border-zinc-200;
+          @apply w-12 h-12 rounded-lg bg-zinc-100 flex items-center justify-center text-[#4B2E2B] mb-3 border border-zinc-200;
 
           .check {
             @apply text-green-500;
@@ -245,7 +245,7 @@
         }
 
         h3 {
-          @apply text-black font-bold text-sm truncate max-w-full px-4;
+          @apply text-[#4B2E2B] font-bold text-sm truncate max-w-full px-4;
         }
 
         .progress {
@@ -273,16 +273,16 @@
         @apply flex items-center space-x-2 cursor-pointer;
 
         .logo {
-          @apply w-6 h-6 text-black;
+          @apply w-6 h-6 text-[#4B2E2B];
         }
 
         .name {
-          @apply text-xl font-serif font-bold text-black tracking-tight;
+          @apply text-xl font-serif font-bold text-[#4B2E2B] tracking-tight;
         }
       }
 
       .exit {
-        @apply text-zinc-500 hover:text-black hover:bg-zinc-100;
+        @apply text-zinc-500 hover:text-[#4B2E2B] hover:bg-zinc-100;
 
         .icon {
           @apply w-5 h-5 mr-2;
@@ -306,11 +306,11 @@
           }
 
           h2 {
-            @apply text-2xl font-serif font-bold text-black;
+            @apply text-2xl font-serif font-bold text-[#4B2E2B];
           }
 
           h3 {
-            @apply text-lg font-serif font-bold text-black;
+            @apply text-lg font-serif font-bold text-[#4B2E2B];
           }
 
           .note {
@@ -322,7 +322,7 @@
           @apply flex flex-wrap items-center gap-3;
 
           .export {
-            @apply bg-primary text-white hover:bg-orange-600 h-9 border-none shadow-sm;
+            @apply bg-primary text-white hover:bg-[#C08552] h-9 border-none shadow-sm;
           }
 
           .share {
@@ -363,7 +363,7 @@
             }
 
             .title {
-              @apply text-sm font-bold text-black;
+              @apply text-sm font-bold text-[#4B2E2B];
             }
 
             .subtitle {
@@ -422,7 +422,7 @@
       }
 
       h1 {
-        @apply text-6xl md:text-8xl font-serif leading-[0.95] text-black mb-8 max-w-5xl mx-auto;
+        @apply text-6xl md:text-8xl font-serif leading-[0.95] text-[#4B2E2B] mb-8 max-w-5xl mx-auto;
       }
 
       .subtitle {
@@ -433,7 +433,7 @@
         @apply flex flex-col sm:flex-row gap-4 justify-center mb-16;
 
         .cta {
-          @apply inline-flex items-center justify-center rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background px-8 py-3 text-sm uppercase tracking-wide font-bold bg-primary text-white hover:bg-[#ea580c] shadow-md;
+          @apply inline-flex items-center justify-center rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background px-8 py-3 text-sm uppercase tracking-wide font-bold bg-primary text-white hover:bg-[#8C5A3C] shadow-md;
 
           .icon {
             @apply ml-2 w-4 h-4;
@@ -468,12 +468,12 @@
               @apply w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3;
 
               .icon {
-                @apply text-orange-500 w-6 h-6;
+                @apply text-[#C08552] w-6 h-6;
               }
             }
 
             h3 {
-              @apply text-xl font-serif font-bold text-black;
+              @apply text-xl font-serif font-bold text-[#4B2E2B];
             }
 
             p {
@@ -497,7 +497,7 @@
             @apply max-w-2xl;
 
             h2 {
-              @apply text-4xl font-serif text-black mb-4;
+              @apply text-4xl font-serif text-[#4B2E2B] mb-4;
             }
 
             p {
@@ -578,11 +578,11 @@
           @apply flex items-center justify-center space-x-2 cursor-pointer;
 
           div {
-            @apply text-zinc-800 group-hover:text-black transition-colors;
+            @apply text-zinc-800 group-hover:text-[#4B2E2B] transition-colors;
           }
 
           span {
-            @apply font-bold text-xl text-zinc-800 group-hover:text-black transition-colors tracking-tight;
+            @apply font-bold text-xl text-zinc-800 group-hover:text-[#4B2E2B] transition-colors tracking-tight;
           }
         }
       }
