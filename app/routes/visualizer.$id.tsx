@@ -25,7 +25,7 @@ const VisualizerId = () => {
 
         const link = document.createElement('a');
         link.href = currentImage;
-        link.download = `roomify-${id || 'design'}.png`;
+        link.download = `VaastuX-${id || 'design'}.png`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -116,7 +116,7 @@ const VisualizerId = () => {
                 <div className="brand">
                     <Box className="logo" />
 
-                    <span className="name">Roomify</span>
+                    <span className="name">VaastuX</span>
                 </div>
                 <Button variant="ghost" size="sm" onClick={handleBack} className="exit">
                     <X className="icon" /> Exit Editor
@@ -190,7 +190,7 @@ const VisualizerId = () => {
                                     <ReactCompareSliderImage src={project?.sourceImage} alt="before" className="compare-img" />
                                 }
                                 itemTwo={
-                                    <ReactCompareSliderImage src={currentImage || project?.renderedImage} alt="after" className="compare-img" />
+                                    <ReactCompareSliderImage src={currentImage || project?.renderedImage || ""} alt="after" className="compare-img" />
                                 }
                             />
                         ) : (

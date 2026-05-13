@@ -6,6 +6,7 @@ import Upload from "../../components/Upload";
 import {useNavigate} from "react-router";
 import {useEffect, useRef, useState} from "react";
 import {createProject, getProjects} from "../../lib/puter.action";
+import {useOutletContext} from "react-router";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -18,6 +19,7 @@ export default function Home() {
     const navigate = useNavigate();
     const [projects, setProjects] = useState<DesignItem[]>([]);
     const isCreatingProjectRef = useRef(false);
+    const { userName} = useOutletContext<AuthContext>()
 
     const handleUploadComplete = async (base64Image: string) => {
         try {
@@ -76,13 +78,13 @@ export default function Home() {
                         <div className="pulse"></div>
                     </div>
 
-                    <p>Introducing Roomify 2.0</p>
+                    <p>Introducing VaastuX 2.0</p>
                 </div>
 
-                <h1>Build beautiful spaces at the speed of thought with Roomify</h1>
+                <h1>Build beautiful spaces at the speed of thought with VaastuX</h1>
 
                 <p className="subtitle">
-                    Roomify is an AI-first design environment that helps you visualize, render, and ship architectural projects faster  than ever.
+                    VaastuX is an AI-first design environment that helps you visualize, render, and ship architectural projects faster  than ever.
                 </p>
 
                 <div className="actions">
@@ -141,7 +143,7 @@ export default function Home() {
                                         <div className="meta">
                                             <Clock size={12} />
                                             <span>{new Date(timestamp).toLocaleDateString()}</span>
-                                            <span>By JS Mastery</span>
+                                            <span>By {userName}</span>
                                         </div>
                                     </div>
                                     <div className="arrow">
