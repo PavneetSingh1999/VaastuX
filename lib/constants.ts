@@ -69,10 +69,10 @@ INSTEAD:
 - redesign the home completely according to Vastu
 - create a brand-new optimized layout
 - preserve only:
-  • total carpet area
-  • room count
-  • utility count
-  • practical functionality
+• total carpet area
+• room count
+• utility count
+• practical functionality
 
 The final layout SHOULD look architecturally different if required for Vastu compliance.
 
